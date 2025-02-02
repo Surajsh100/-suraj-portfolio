@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Kumar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Suraj Kumar</h1>
+        <p>BCA Student | C++ Developer | Web Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#internship">Internship</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>A dedicated and detail-oriented BCA student with strong knowledge in programming, web technologies, and software development.</p>
+        <h3>Education</h3>
+        <p>BCA, Indira Gandhi National Open University (IGNOU), Expected 2025</p>
+        <h3>Skills</h3>
+        <ul>
+            <li>C, C++, Java, Python, SQL</li>
+            <li>HTML, CSS, JavaScript, PHP, Node.js</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Git, GitHub, XAMPP</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Online Banking Management System:</strong> Web-based system for account creation, fund transfer, and transaction tracking.</li>
+            <li><strong>ATM Machine Project:</strong> Java-based simulation of an ATM with balance checking and withdrawal functionalities.</li>
+            <li><strong>Online Shopping Project:</strong> E-commerce site with product selection, cart system, and payment gateway.</li>
+        </ul>
+    </section>
+    
+    <section id="internship">
+        <h2>Internship</h2>
+        <p>Intern at CodeTech IT Solution (One-month internship)</p>
+        <ul>
+            <li>Built core features for an online shopping platform.</li>
+            <li>Integrated payment gateway and optimized database queries.</li>
+            <li>Collaborated with the team to enhance UI/UX.</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:surajsh833@gmail.com">surajsh833@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Surajsh100">github.com/Surajsh100</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/suraj-kumar">linkedin.com/in/suraj-kumar</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Suraj Kumar. All rights reserved.</p>
+        <button id="themeToggle">Toggle Dark Mode</button>
+    </footer>
+    
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+        document.body.classList.add('light-mode');
+    </script>
+</body>
+</html>
